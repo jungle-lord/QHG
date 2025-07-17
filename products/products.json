@@ -1,0 +1,34 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "category": "refrigerators",
+      "title": "Energy Star Fridge",
+      "price": 599,
+      "condition": "Used",
+      "description": "Like-new condition with ice maker",
+      "image": "products/images/fridge.png",
+      "warranty": "60 days"
+    },
+    {
+      "id": 2,
+      "category": "stoves",
+      "title": "Gas Range",
+      "price": 399,
+      "condition": "Refurbished",
+      "description": "5-burner professional gas range",
+      "image": "products/images/fridge.png",
+      "warranty": "60 days"
+    },
+    {
+      "id": 3,
+      "category": "washers",
+      "title": "Front Load Washer",
+      "price": 349,
+      "condition": "Used",
+      "description": "High-efficiency washer with multiple cycles",
+      "image": "products/images/fridge.png",
+      "warranty": "60 days"
+    }
+  ]
+}
