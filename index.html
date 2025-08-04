@@ -3,7 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Quality Household Goods - Appliance Store</title>
+    <title>Quality Household Goods - Premium Appliances</title>
+    <meta
+      name="description"
+      content="Family-owned appliance store in Everett offering quality new and refurbished appliances since 2016."
+    />
+    <meta name="theme-color" content="#1a1a1a" />
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -12,52 +24,57 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
-    <link href="styles/main.css" rel="stylesheet" />
+    <link href="styles/main.min.css" rel="stylesheet" />
   </head>
   <body>
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="#">
-          <img src="images/logo1.png" alt="QHG Logo" height="70" width="150" />
+        <a class="navbar-brand" href="#" aria-label="Quality Household Goods">
+          <img
+            src="images/logo1.png"
+            alt="QHG Logo"
+            height="40"
+            class="navbar-logo"
+            loading="lazy"
+          />
         </a>
         <button
           class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav mx-auto">
             <li class="nav-item">
-              <a class="nav-link active" href="#">Home</a>
+              <a class="nav-link active" href="#" aria-current="page">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#services">Services</a>
+              <a class="nav-link" href="#products">Products</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#products">Products</a>
+              <a class="nav-link" href="#services">Services</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#contact">Contact</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="admin/upload.html">Admin</a>
-            </li>
           </ul>
-          <div class="d-flex">
-            <a href="#" class="text-white mx-2"
+          <div class="d-flex social-icons">
+            <a href="#" class="social-icon" aria-label="Facebook"
               ><i class="fab fa-facebook-f"></i
             ></a>
-            <a href="#" class="text-white mx-2"
+            <a href="#" class="social-icon" aria-label="Twitter"
               ><i class="fab fa-twitter"></i
             ></a>
-            <a href="#" class="text-white mx-2"
+            <a href="#" class="social-icon" aria-label="Instagram"
               ><i class="fab fa-instagram"></i
             ></a>
           </div>
@@ -66,194 +83,466 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero-section">
+    <header class="hero-section">
       <div class="container">
-        <div class="row align-items-center">
-          <div class="col-md-6">
-            <h1>Quality Appliances at Affordable Prices</h1>
-            <p>
-              Since 2016, we've been providing Everett with reliable new and
-              used appliances that stand the test of time.
+        <div class="row align-items-center py-5">
+          <div class="col-lg-6 hero-content py-5 order-lg-1 order-2">
+            <span class="badge bg-gold mb-3">Family Owned Since 2016</span>
+            <h1 class="text-white mb-4">
+              Premium Appliances Without the Premium Price
+            </h1>
+            <p class="lead text-light mb-4">
+              Since 2016, we've provided Everett with luxury-grade appliances at
+              prices that make sense. Quality shouldn't break the bank.
             </p>
-            <a href="#products" class="btn btn-primary">Shop Now</a>
-          </div>
-          <div class="col-md-6">
-            <img
-              src="images/appliances.png"
-              alt="Appliances"
-              class="img-fluid"
-            />
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Products Section -->
-    <section id="products" class="py-5 bg-light">
-      <div class="container">
-        <h2 class="text-center mb-5">Our Products</h2>
-        <div class="row" id="productContainer">
-          <!-- Products will be loaded here by JavaScript -->
-        </div>
-      </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="py-5">
-      <div class="container">
-        <h2 class="text-center mb-5">About Quality Household Goods</h2>
-        <div class="row">
-          <div class="col-md-6">
-            <img
-              src="images/store-front.png"
-              alt="Store Front"
-              class="img-fluid rounded"
-            />
-          </div>
-          <div class="col-md-6">
-            <p>
-              Welcome to Quality Household Goods, a local appliance store run by
-              our family since 2016. We're all about providing you with quality
-              appliances without breaking the bank.
-            </p>
-            <p>
-              Quality and affordability is what we strive for. We understand the
-              importance of reliable appliances in your daily life, and that's
-              why we take pride in offering a diverse range of both used and new
-              appliances from the best brands.
-            </p>
-            <p>
-              We test all appliances and check them thoroughly before they hit
-              the floor. Thank you for choosing Quality Household Goods!
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Services Section -->
-    <section id="services" class="py-5 bg-light">
-      <div class="container">
-        <h2 class="text-center mb-5">Our Services</h2>
-        <div class="row">
-          <div class="col-md-4 mb-4">
-            <div class="card h-100">
-              <div class="card-body">
-                <h5 class="card-title">Warranty Coverage</h5>
-                <ul>
-                  <li>Used/refurbished: 60 day warranty</li>
-                  <li>New appliances: 4 month warranty</li>
-                  <li>Covers parts, labor, exchange or store credit</li>
-                </ul>
-              </div>
+            <div class="hero-buttons d-flex flex-wrap gap-3">
+              <a href="#products" class="btn btn-primary me-3 px-4 py-3"
+                >Shop Now</a
+              >
+              <a href="#contact" class="btn btn-outline-light px-4 py-3"
+                >Book Consultation</a
+              >
             </div>
+            <!-- Content remains the same -->
           </div>
-          <div class="col-md-4 mb-4">
-            <div class="card h-100">
-              <div class="card-body">
-                <h5 class="card-title">Delivery & Installation</h5>
-                <ul>
-                  <li>Starting at $50 in North Everett</li>
-                  <li>$70 for large appliances</li>
-                  <li>$30 fridge haul away</li>
-                  <li>Call for exact quote</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-4">
-            <div class="card h-100">
-              <div class="card-body">
-                <h5 class="card-title">Recycling</h5>
-                <ul>
-                  <li>Free drop-off for most appliances</li>
-                  <li>$30 fee for refrigerators/freezers</li>
-                  <li>No trade-ins or store credit</li>
-                </ul>
+          <!-- <div class="col-lg-6 hero-content py-5">
+            
+          </div> -->
+          <div class="col-lg-6 order-lg-2 order-1 mb-4 mb-lg-0">
+            <div class="appliance-showcase d-flex justify-content-end">
+              <img
+                src="images/frblack.png"
+                alt="Premium Refrigerator"
+                class="img-fluid rounded-3 shadow-lg"
+                loading="lazy"
+                width="800"
+                height="400"
+              />
+              <div class="price-badge bg-gold text-dark">
+                $1,299 <span class="original-price">$2,499</span>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </header>
 
-    <!-- Contact Section -->
-    <section id="contact" class="py-5">
-      <div class="container">
-        <h2 class="text-center mb-5">Contact Us</h2>
-        <div class="row">
-          <div class="col-md-6">
-            <h4>Store Information</h4>
-            <p>
-              <i class="fas fa-map-marker-alt me-2"></i> 123 Appliance Street,
-              Everett, WA
-            </p>
-            <p><i class="fas fa-phone me-2"></i> (425) 212-9724</p>
-            <p><i class="fas fa-clock me-2"></i> Open Mon-Sat: 9am-6pm</p>
+    <!-- Main Content -->
+    <main>
+      <!-- Products Section -->
+      <section id="products" class="py-6 bg-light">
+        <div class="container">
+          <div class="section-header mb-5">
+            <h2>Featured Products</h2>
+            <p class="text-muted">Curated selection of premium appliances</p>
           </div>
-          <div class="col-md-6">
-            <form>
-              <div class="mb-3">
+
+          <div class="mb-5">
+            <div class="search-box mx-auto">
+              <div class="input-group shadow-sm">
                 <input
                   type="text"
-                  class="form-control"
-                  placeholder="Your Name"
+                  class="form-control border-0 py-3"
+                  placeholder="Search products..."
+                  id="productSearch"
+                  aria-label="Search products"
                 />
+                <button
+                  class="btn btn-primary px-4"
+                  type="button"
+                  aria-label="Search"
+                >
+                  <i class="fas fa-search me-2"></i> Search
+                </button>
               </div>
-              <div class="mb-3">
+            </div>
+          </div>
+
+          <div id="category-filters" class="text-center mb-5">
+            <!-- Categories will be loaded by JavaScript -->
+          </div>
+
+          <div class="row g-4" id="productContainer">
+            <!-- Products loaded via JavaScript -->
+            <div class="col-12 text-center py-5">
+              <div class="spinner-border text-gold" role="status">
+                <span class="visually-hidden">Loading...</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="text-center mt-5">
+            <a href="#" class="btn btn-outline-dark btn-lg px-5 py-3"
+              >View Full Catalog</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="py-6 bg-white">
+        <div class="container">
+          <div class="section-header mb-5">
+            <h2>Our Story</h2>
+            <p class="text-muted">Family-owned since 2016</p>
+          </div>
+
+          <div class="row align-items-center g-5">
+            <div class="col-lg-6">
+              <div class="about-image-container">
+                <img
+                  src="images/store-front.png"
+                  alt="Store Front"
+                  class="img-fluid rounded-3 shadow"
+                  loading="lazy"
+                  width="600"
+                  height="400"
+                />
+                <div class="experience-badge bg-gold text-dark">
+                  <span>7+</span>
+                  <small>Years in Business</small>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <p class="lead">
+                Quality Household Goods is a family-run business dedicated to
+                providing Everett residents with high-quality appliances at
+                affordable prices.
+              </p>
+
+              <div class="about-features my-4">
+                <div class="feature-item">
+                  <i class="fas fa-check-circle text-gold"></i>
+                  <span>50-point quality inspection on all appliances</span>
+                </div>
+                <div class="feature-item">
+                  <i class="fas fa-check-circle text-gold"></i>
+                  <span>Industry-leading warranty protection</span>
+                </div>
+                <div class="feature-item">
+                  <i class="fas fa-check-circle text-gold"></i>
+                  <span>Local family business you can trust</span>
+                </div>
+              </div>
+
+              <div class="policy-highlights bg-light p-4 rounded-3 shadow-sm">
+                <h5 class="mb-3">Our Guarantee:</h5>
+                <ul class="mb-0 ps-3">
+                  <li>60-day warranty on refurbished appliances</li>
+                  <li>4-month warranty on new appliances</li>
+                  <li>Professional delivery and installation available</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services Section -->
+      <section id="services" class="py-6 bg-light">
+        <div class="container">
+          <div class="section-header mb-5">
+            <h2>Our Services</h2>
+            <p class="text-muted">Complete appliance solutions</p>
+          </div>
+
+          <div class="row g-4">
+            <div class="col-md-4">
+              <div class="service-card card h-100 border-0 shadow-sm">
+                <div class="card-body text-center p-4">
+                  <div class="service-icon mb-4">
+                    <i class="fas fa-shield-alt fa-3x text-gold"></i>
+                  </div>
+                  <h4 class="mb-3">Warranty Protection</h4>
+                  <ul class="text-start ps-4 mb-0">
+                    <li>60-day warranty on refurbished</li>
+                    <li>4-month warranty on new</li>
+                    <li>Parts & labor coverage</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="service-card card h-100 border-0 shadow-sm">
+                <div class="card-body text-center p-4">
+                  <div class="service-icon mb-4">
+                    <i class="fas fa-truck fa-3x text-gold"></i>
+                  </div>
+                  <h4 class="mb-3">White Glove Delivery</h4>
+                  <ul class="text-start ps-4 mb-0">
+                    <li>Professional installation</li>
+                    <li>Starting at $50 locally</li>
+                    <li>Old appliance removal</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="service-card card h-100 border-0 shadow-sm">
+                <div class="card-body text-center p-4">
+                  <div class="service-icon mb-4">
+                    <i class="fas fa-recycle fa-3x text-gold"></i>
+                  </div>
+                  <h4 class="mb-3">Sustainable Recycling</h4>
+                  <ul class="text-start ps-4 mb-0">
+                    <li>Eco-friendly disposal</li>
+                    <li>Free drop-off for most items</li>
+                    <li>Responsible recycling</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="py-6 bg-white">
+        <div class="container">
+          <div class="section-header mb-5">
+            <h2>Visit Us Today</h2>
+            <p class="text-muted">We're here to serve you</p>
+          </div>
+
+          <div class="row g-4">
+            <div class="col-lg-6">
+              <div class="card h-100 border-0 shadow-sm">
+                <div class="card-body p-4">
+                  <h4 class="mb-4">
+                    <i class="fas fa-store text-gold me-2"></i> Store
+                    Information
+                  </h4>
+                  <div class="contact-info">
+                    <div class="contact-item mb-3">
+                      <i class="fas fa-map-marker-alt text-gold me-3"></i>
+                      <div>
+                        <h6>Showroom Address</h6>
+                        <p class="mb-0">1618 Broadway, Everett, WA 98201</p>
+                      </div>
+                    </div>
+                    <div class="contact-item mb-4">
+                      <i class="fas fa-phone text-gold me-3"></i>
+                      <div>
+                        <h6>Contact Phone</h6>
+                        <p class="mb-0">(425) 212-9724</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <h5 class="mb-3">
+                    <i class="fas fa-clock text-gold me-2"></i> Business Hours
+                  </h5>
+                  <ul class="hours-list list-unstyled">
+                    <li
+                      class="d-flex justify-content-between py-2 border-bottom"
+                    >
+                      <span>Monday - Friday</span>
+                      <span>9:30 AM – 6 PM</span>
+                    </li>
+                    <li
+                      class="d-flex justify-content-between py-2 border-bottom"
+                    >
+                      <span>Saturday</span>
+                      <span>9:30 AM – 4 PM</span>
+                    </li>
+                    <li class="d-flex justify-content-between py-2">
+                      <span>Sunday</span>
+                      <span>Closed</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <div class="card h-100 border-0 shadow-sm">
+                <div class="card-body p-4">
+                  <h4 class="mb-4">
+                    <i class="fas fa-truck text-gold me-2"></i> Delivery
+                    Information
+                  </h4>
+                  <ul class="hours-list list-unstyled mb-4">
+                    <li
+                      class="d-flex justify-content-between py-2 border-bottom"
+                    >
+                      <span>Monday - Friday</span>
+                      <span>2 PM – 6 PM</span>
+                    </li>
+                    <li class="d-flex justify-content-between py-2">
+                      <span>Saturday</span>
+                      <span>9 AM – 5 PM</span>
+                    </li>
+                  </ul>
+
+                  <div
+                    class="map-container ratio ratio-16x9 rounded overflow-hidden border"
+                  >
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2689.238589611732!2d-122.20738868436894!3d47.62028797918546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54906c6d8a6b7a6b%3A0x1b3b3b3b3b3b3b3b!2s1618%20Broadway%2C%20Everett%2C%20WA%2098201!5e0!3m2!1sen!2sus!4v1620000000000!5m2!1sen!2sus"
+                      allowfullscreen=""
+                      loading="lazy"
+                      referrerpolicy="no-referrer-when-downgrade"
+                      aria-label="Store location map"
+                    ></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Call to Action -->
+      <section class="cta-section py-6 bg-black text-white">
+        <div class="container text-center">
+          <h3 class="mb-3">Ready to Upgrade Your Home?</h3>
+          <p class="lead mb-4">
+            Schedule a free consultation with our appliance experts today
+          </p>
+          <a href="#contact" class="btn btn-gold btn-lg px-5 py-3"
+            >Contact Us Now</a
+          >
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-5">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-4">
+            <img
+              src="images/logo1.png"
+              alt="Logo"
+              height="50"
+              class="mb-3"
+              loading="lazy"
+            />
+            <p class="text-white-50">
+              Your trusted appliance destination since 2016, providing quality
+              and value to the Everett community.
+            </p>
+            <div class="social-icons mt-3">
+              <a href="#" class="text-white me-3" aria-label="Facebook"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" class="text-white me-3" aria-label="Twitter"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="#" class="text-white" aria-label="Instagram"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-4">
+            <h5 class="text-white mb-3">Quick Links</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2"><a href="#" class="text-white-50">Home</a></li>
+              <li class="mb-2">
+                <a href="#about" class="text-white-50">About</a>
+              </li>
+              <li class="mb-2">
+                <a href="#products" class="text-white-50">Products</a>
+              </li>
+              <li class="mb-2">
+                <a href="#services" class="text-white-50">Services</a>
+              </li>
+              <li><a href="#contact" class="text-white-50">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <h5 class="text-white mb-3">Products</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a href="#" class="text-white-50">Refrigerators</a>
+              </li>
+              <li class="mb-2"><a href="#" class="text-white-50">Ranges</a></li>
+              <li class="mb-2">
+                <a href="#" class="text-white-50">Washers</a>
+              </li>
+              <li class="mb-2"><a href="#" class="text-white-50">Dryers</a></li>
+              <li><a href="#" class="text-white-50">Dishwashers</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <h5 class="text-white mb-3">Newsletter</h5>
+            <p class="text-white-50">
+              Subscribe for exclusive deals and appliance tips
+            </p>
+            <form class="mt-3">
+              <div class="input-group mb-3">
                 <input
                   type="email"
-                  class="form-control"
-                  placeholder="Your Email"
+                  class="form-control border-0 py-2"
+                  placeholder="Your email"
+                  aria-label="Email for newsletter"
+                  required
                 />
+                <button class="btn btn-gold px-3" type="submit">
+                  Subscribe
+                </button>
               </div>
-              <div class="mb-3">
-                <textarea
-                  class="form-control"
-                  rows="3"
-                  placeholder="Your Message"
-                ></textarea>
-              </div>
-              <button type="submit" class="btn btn-primary">
-                Send Message
-              </button>
+              <small class="text-white-50">We'll never share your email</small>
             </form>
           </div>
         </div>
-      </div>
-    </section>
 
-    <!-- Footer -->
-    <footer class="bg-black text-white py-4">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <h5>Quality Household Goods</h5>
-            <p>Your trusted appliance store since 2016.</p>
-          </div>
-          <div class="col-md-6 text-end">
-            <a href="#" class="text-white mx-2"
-              ><i class="fab fa-facebook-f"></i
-            ></a>
-            <a href="#" class="text-white mx-2"
-              ><i class="fab fa-twitter"></i
-            ></a>
-            <a href="#" class="text-white mx-2"
-              ><i class="fab fa-instagram"></i
-            ></a>
-          </div>
-        </div>
-        <hr />
-        <div class="text-center">
+        <hr class="my-4 border-secondary" />
+
+        <div class="text-center text-white-50">
           <p class="mb-0">
-            &copy; 2023 Quality Household Goods. All rights reserved.
+            &copy; <span id="currentYear"></span> Quality Household Goods. All
+            rights reserved.
           </p>
         </div>
       </div>
     </footer>
 
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top bg-gold text-dark" aria-label="Back to top"
+      ><i class="fas fa-arrow-up"></i
+    ></a>
+
+    <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/main.js"></script>
     <script src="js/productLoader.js"></script>
+    <script>
+      // Back to top button
+      window.addEventListener("scroll", function () {
+        const backToTop = document.querySelector(".back-to-top");
+        backToTop.style.display = window.pageYOffset > 300 ? "flex" : "none";
+      });
+
+      // Set current year in footer
+      document.getElementById("currentYear").textContent =
+        new Date().getFullYear();
+
+      // Search functionality with debounce
+      let searchTimeout;
+      document
+        .getElementById("productSearch")
+        .addEventListener("input", function (e) {
+          clearTimeout(searchTimeout);
+          searchTimeout = setTimeout(() => {
+            const searchTerm = e.target.value.toLowerCase();
+            const products = document.querySelectorAll(".product-card");
+
+            products.forEach((product) => {
+              const title = product
+                .querySelector(".product-title")
+                .textContent.toLowerCase();
+              product.style.display = title.includes(searchTerm)
+                ? "block"
+                : "none";
+            });
+          }, 300);
+        });
+    </script>
   </body>
 </html>
